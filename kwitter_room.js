@@ -2,14 +2,14 @@
 var firebaseConfig = {
       apiKey: "AIzaSyDEuYDvtnocXTx1CgUhbN-ozNmmng7P49w",
       authDomain: "kwitternew-3d386.firebaseapp.com",
+      databaseURL: "https://kwitternew-3d386-default-rtdb.firebaseio.com",
       projectId: "kwitternew-3d386",
       storageBucket: "kwitternew-3d386.appspot.com",
       messagingSenderId: "1041247739225",
       appId: "1:1041247739225:web:fd3d9746550ef043b60048"
     };
-  
-     firebase.initializeApp(firebaseConfig);
 
+      firebase.initializeApp(firebaseConfig);
       user_name = localStorage.getItem("user_name");
       room_name = localStorage.getItem("room_name");
       document.getElementById("user_name").innerHTML = "Welcome "+user_name+ "  !";
